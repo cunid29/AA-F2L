@@ -4,6 +4,12 @@
     transition: all 0.4s;
 }
 
+.content-inside .btn-read:hover {
+    background-color: #ffffff !important;
+    color: #28a745 !important;
+    transition: all 0.4s;
+}
+
 .card .image-scale {
     overflow: hidden;
 }
