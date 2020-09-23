@@ -1,0 +1,17 @@
+.banner-support .support-content:hover {
+    background-color: #ffc107 !important;
+    color: #343a40 !important;
+    transition: all 0.4s;
+}
+
+.card .image-scale {
+    overflow: hidden;
+}
+
+.card .image-scale img {
+    transition: all 1s ease;
+}
+
+.card .image-scale:hover img {
+    transform: scale(1.1);
+}
