@@ -15,7 +15,7 @@
 }
 
 .card .image-scale img {
-    transition: all 1s ease;
+    transition: all 0.2s ease;
 }
 
 .card .image-scale:hover img {
@@ -32,4 +32,8 @@
     position: relative;
     top: -30px !important;
     border-bottom: 3px solid #ffc107;
+}
+
+footer .icon-scale {
+    font-size: 30px;
 }
