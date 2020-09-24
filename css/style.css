@@ -37,3 +37,18 @@
 footer .icon-scale {
     font-size: 30px;
 }
+
+.contact-us .form-control:focus {
+    border: 1px solid #28a745 !important;
+    box-shadow: 0 0 0 0.2rem#28a74656 !important;
+}
+
+.search .form-control:focus {
+    border: 1px solid #28a745 !important;
+    box-shadow: 0 0 0 0.2rem#28a74656 !important;
+}
+
+.search .btn:focus {
+    border: 1px solid #28a745 !important;
+    box-shadow: 0 0 0 0.2rem#28a74656 !important;
+}
