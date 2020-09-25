@@ -22,6 +22,14 @@
     transform: scale(1.1);
 }
 
+.card .image-scale:hover h5 {
+    color: #28a745 !important;
+}
+
+.h5-hover:hover h5 {
+    color: #28a745 !important;
+}
+
 .card .content-top-success {
     position: relative;
     top: -30px !important;
@@ -69,4 +77,20 @@ footer .icon-scale {
         left: 0px;
         opacity: 100%;
     }
+}
+
+.underline-text {
+    border-bottom: 3px solid #28a745;
+    display: inline;
+}
+
+.banner-contact .support-content:hover {
+    background-color: #28a745 !important;
+    color: #ffff !important;
+    transition: all 0.4s;
+}
+
+.media-page .form-control:focus {
+    border: 1px solid #28a745 !important;
+    box-shadow: 0 0 0 0.2rem#28a74656 !important;
 }
