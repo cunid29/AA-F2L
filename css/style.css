@@ -52,3 +52,21 @@ footer .icon-scale {
     border: 1px solid #28a745 !important;
     box-shadow: 0 0 0 0.2rem#28a74656 !important;
 }
+
+.contact-us .form-contact {
+    position: relative;
+    animation-name: test;
+    animation-duration: 2s;
+    background-image: linear-gradient(45deg, #3bff3b98, #fffb00a1);
+}
+
+@keyframes test {
+    0% {
+        left: -500px;
+        opacity: 0%;
+    }
+    100% {
+        left: 0px;
+        opacity: 100%;
+    }
+}
