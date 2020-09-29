@@ -28,6 +28,12 @@ angular.module('myApp', ['ngRoute'])
             .when('/member', {
                 templateUrl: '../pages/member.html'
             })
+            .when('/member/register', {
+                templateUrl: '../pages/member-register.html',
+            })
+            .when('/investors/register', {
+                templateUrl: '../pages/investors-register.html',
+            })
             .otherwise({
                 redirectTo: '/home'
             });
