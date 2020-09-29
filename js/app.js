@@ -10,6 +10,12 @@ angular.module('myApp', ['ngRoute'])
             .when('/media', {
                 templateUrl: '../pages/media.html'
             })
+            .when('/investors', {
+                templateUrl: '../pages/investors.html'
+            })
+            .when('/member', {
+                templateUrl: '../pages/member.html'
+            })
             .otherwise({
                 redirectTo: '/home'
             });

@@ -46,12 +46,7 @@ footer .icon-scale {
     font-size: 30px;
 }
 
-.contact-us .form-control:focus {
-    border: 1px solid #28a745 !important;
-    box-shadow: 0 0 0 0.2rem#28a74656 !important;
-}
-
-.search .form-control:focus {
+.form-control:focus {
     border: 1px solid #28a745 !important;
     box-shadow: 0 0 0 0.2rem#28a74656 !important;
 }
@@ -63,12 +58,12 @@ footer .icon-scale {
 
 .contact-us .form-contact {
     position: relative;
-    animation-name: test;
+    animation-name: form-contact;
     animation-duration: 2s;
-    background-image: linear-gradient(45deg, #3bff3b98, #fffb00a1);
+    background-image: linear-gradient(45deg, #3bff3b79, #fffb0083);
 }
 
-@keyframes test {
+@keyframes form-contact {
     0% {
         left: -500px;
         opacity: 0%;
@@ -93,4 +88,64 @@ footer .icon-scale {
 .media-page .form-control:focus {
     border: 1px solid #28a745 !important;
     box-shadow: 0 0 0 0.2rem#28a74656 !important;
+}
+
+.investors {
+    background-image: url('../image/bg-investors.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.investors .form-investors {
+    position: relative;
+    animation-name: form-investors;
+    animation-duration: 2s;
+    background-color: rgba(231, 221, 221, 0.322);
+}
+
+@keyframes form-investors {
+    0% {
+        left: -500px;
+        opacity: 0%;
+    }
+    100% {
+        left: 0px;
+        opacity: 100%;
+    }
+}
+
+.investors .investors-content {
+    background-color: rgba(231, 221, 221, 0.322);
+    position: relative;
+    animation-name: investors-content;
+    animation-duration: 2s;
+}
+
+@keyframes investors-content {
+    0% {
+        right: -500px;
+        opacity: 0%;
+    }
+    100% {
+        right: 0px;
+        opacity: 100%;
+    }
+}
+
+.member .form-member {
+    background-color: rgba(231, 221, 221, 0.322);
+    position: relative;
+    animation-name: member-form;
+    animation-duration: 2s;
+}
+
+@keyframes member-form {
+    0% {
+        left: -500px;
+        opacity: 0%;
+    }
+    100% {
+        left: 0px;
+        opacity: 100%;
+    }
 }
