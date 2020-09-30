@@ -1,5 +1,31 @@
 .container-fluid {
-    max-width: 1300px;
+    max-width: 1300px !important;
+}
+
+.menu li a {
+    border-bottom: 3px solid transparent;
+}
+
+.menu .navbar-one li a:hover {
+    border-bottom: 3px solid #ffc107;
+    transition: ease 1s;
+}
+
+.menu .navbar-one li a:focus {
+    border-bottom: 3px solid #28a745 !important;
+}
+
+.menu .navbar-two li a:hover {
+    border-bottom: 3px solid #28a745;
+    transition: ease 1s;
+}
+
+.menu .active::after {
+    border-bottom: 3px solid #ffc107;
+}
+
+.menu .navbar-two li a:focus {
+    border-bottom: 3px solid #ffc107 !important;
 }
 
 .banner-support .support-content:hover {
