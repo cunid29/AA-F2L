@@ -1,6 +1,18 @@
+/* layout */
+
 .container-fluid {
     max-width: 1300px !important;
 }
+
+
+/* justify text*/
+
+.justify-text {
+    text-align: justify;
+}
+
+
+/* menu */
 
 .menu li a {
     border-bottom: 3px solid transparent;
@@ -28,17 +40,26 @@
     border-bottom: 3px solid #ffc107 !important;
 }
 
+
+/* banner support */
+
 .banner-support .support-content:hover {
     background-color: #ffc107 !important;
     color: #343a40 !important;
     transition: all 0.4s;
 }
 
+
+/* btn read-hover */
+
 .content-inside .btn-read:hover {
     background-color: #ffffff !important;
     color: #28a745 !important;
     transition: all 0.4s;
 }
+
+
+/* post */
 
 .card .image-scale {
     overflow: hidden;
@@ -72,6 +93,9 @@
     border-bottom: 3px solid #ffc107;
 }
 
+
+/* social icon scale */
+
 footer .icon-scale {
     font-size: 30px;
 }
@@ -85,6 +109,9 @@ footer .icon-scale {
     border: 1px solid #28a745 !important;
     box-shadow: 0 0 0 0.2rem#28a74656 !important;
 }
+
+
+/* contact-form */
 
 .contact-us .form-contact {
     position: relative;
@@ -104,6 +131,9 @@ footer .icon-scale {
     }
 }
 
+
+/* gạch chân text success */
+
 .underline-text {
     border-bottom: 3px solid #28a745;
     display: inline;
@@ -119,6 +149,9 @@ footer .icon-scale {
     border: 1px solid #28a745 !important;
     box-shadow: 0 0 0 0.2rem#28a74656 !important;
 }
+
+
+/* investors page*/
 
 .investors {
     background-image: url('../image/bg-investors.jpg');
@@ -161,6 +194,9 @@ footer .icon-scale {
         opacity: 100%;
     }
 }
+
+
+/* member */
 
 .member .form-member {
     background-color: rgba(231, 221, 221, 0.322);
