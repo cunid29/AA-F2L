@@ -34,10 +34,10 @@
             })
             .when('/investors/register', {
                 templateUrl: '../pages/investors-register.html',
-            })
-            .otherwise({
-                redirectTo: '/'
             });
+        // .otherwise({
+        //     redirectTo: '/'
+        // });
     });
     //Filter String
     app.filter('cut', function() {

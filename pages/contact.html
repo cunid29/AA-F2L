@@ -1,28 +1,34 @@
 <article>
     <div class="container mt-5 contact-us">
         <div class="mb-5">
-            <h2 class="font-weight-bold text-uppercase underline-text">Contact Us!</h2>
+            <h2 class="font-weight-bold text-uppercase underline-text">Contact Us</h2>
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <form action="" method="post" class="form-contact py-5 p-4">
+                <form action="" method="post" class="form-contact py-5 p-4 needs-validation" name="contactForm">
                     <div class="form-group">
-                        <input id="my-input" class="form-control rounded-0" type="text" name="" placeholder="Name*">
+                        <input id="my-input" ng-model="name" required class="form-control rounded-0 has-success" type="text" name="name" placeholder="Name*">
+                        <span ng-show="contactForm.name.$touched && contactForm.name.$invalid" class="text-danger ml-3">Required!</span>
                     </div>
                     <div class="form-group">
-                        <input id="my-input" class="form-control rounded-0" type="text" name="" placeholder="Phone*">
+                        <input id="my-input" ng-model="phone" required class="form-control rounded-0" type="text" name="phone" placeholder="Phone*">
+                        <span ng-show="contactForm.phone.$touched && contactForm.phone.$invalid" class="text-danger ml-3">Required!</span>
                     </div>
                     <div class="form-group">
-                        <input id="my-input" class="form-control rounded-0" type="email" name="" placeholder="Email*">
+                        <input id="my-input" ng-model="email" required class="form-control rounded-0" type="email" name="email" placeholder="Email*">
+                        <span ng-show="contactForm.email.$touched && contactForm.email.$invalid" class="text-danger ml-3">Incorrect!</span>
                     </div>
                     <div class="form-group">
-                        <input id="my-input" class="form-control rounded-0" type="email" name="" placeholder="Company name*">
+                        <input id="my-input" ng-model="company" required class="form-control rounded-0" type="text" name="company" placeholder="Company name*">
+                        <span ng-show="contactForm.company.$touched && contactForm.company.$invalid" class="text-danger ml-3">Required!</span>
                     </div>
                     <div class="form-group">
-                        <input id="my-input" class="form-control rounded-0" type="text" name="" placeholder="Address*">
+                        <input id="my-input" ng-model="address" required class="form-control rounded-0" type="text" name="address" placeholder="Address*">
+                        <span ng-show="contactForm.address.$touched && contactForm.address.$invalid" class="text-danger ml-3">Required!</span>
                     </div>
                     <div class="form-group">
-                        <textarea id="my-textarea" class="form-control rounded-0" name="" rows="3" placeholder="Your message*"></textarea>
+                        <textarea id="my-textarea" ng-model="message" required class="form-control rounded-0" name="message" rows="3" placeholder="Your message*"></textarea>
+                        <span ng-show="contactForm.message.$touched && contactForm.message.$invalid" class="text-danger ml-3">Required!</span>
                     </div>
                     <button type="submit" class="btn btn-success rounded-0">Submit</button>
                 </form>
