@@ -62,3 +62,15 @@
             return value + (tail || ' …');
         };
     });
+    //SweetAlert
+    app.controller('memberLogin', function($scope) {
+        $scope.submit = function() {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your work has been saved',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+    })

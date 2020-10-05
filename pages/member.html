@@ -3,15 +3,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <form action="" method="post" class="form-member py-5 p-4">
+                    <form action="" method="post" class="form-member py-5 p-4" name="memberLogin">
                         <div class="mb-4">
                             <h2 class="font-weight-bold text-uppercase underline-text text-dark">Login</h2>
                         </div>
                         <div class="form-group">
-                            <input id="my-input" class="form-control rounded-0" type="text" name="" placeholder="Username">
+                            <input id="my-input" ng-model="username" ng-class="{'is-invalid': memberLogin.username.$error.required}" class="form-control rounded-0" type="text" name="username" placeholder="Username">
                         </div>
                         <div class="form-group">
-                            <input id="my-input" class="form-control rounded-0" type="password" name="" placeholder="Password">
+                            <input id="my-input" ng-model="password" ng-class="{'is-invalid': memberLogin.password.$error.required}" class="form-control rounded-0" type="password" name="password" placeholder="Password">
                         </div>
                         <div class="row mb-3">
                             <div class="col-6">
@@ -24,7 +24,7 @@
                                 <a href="#" class="text-dark">Forgot Password</a>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-success rounded-0">Login</button>
+                        <button type="submit" class="btn btn-success rounded-0" ng-if="expression">Login</button>
                         <div class="text-center mt-3">
                             <a href="#!member/register" class="text-dark">Do not have an account?</a>
                         </div>
